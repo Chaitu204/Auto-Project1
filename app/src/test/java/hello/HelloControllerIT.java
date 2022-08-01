@@ -37,5 +37,6 @@ public class HelloControllerIT {
         ResponseEntity<String> response = template.getForEntity(base.toString(),
                 String.class);
         assertThat(response.getBody(), equalTo("Greetings from Spring Boot!"));
+        System.out.Println("verify code");
     }
 }
